@@ -5,6 +5,9 @@
   "repository": "https://github.com/stephanogiuseppe/posts-project-backend.git",
   "author": "Stéphano Giuseppe <stephano.grp@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
@@ -14,6 +17,7 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.1"
   }
 }
