@@ -2,16 +2,16 @@ const express = require('express')
 const mongoose = require('mongoose')
 
 const app = express()
-const connectionURI =
+
+const ROUTES_PATH = './routes'
+const CONNECTION_URI =
   'mongodb+srv://dbUser:dbUser@clusterpostsproject' +
   '-3jqwe.mongodb.net/test?retryWrites=true&w=majority'
 
-mongoose.connect(connectionURI, {
+mongoose.connect(CONNECTION_URI, {
   useNewUrlParser: true
 })
 
-app.get('/', (req, res) => {
-  return res.send(`Hello ${req.query.name}`)
-})
+app.use(require(ROUTES_PATH))
 
 app.listen(3333)
