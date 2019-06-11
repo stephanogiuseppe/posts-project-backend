@@ -20,7 +20,7 @@
     "no-else-return": ["error", { "allowElseIf": false }],
     "padded-blocks": ["error", "never"],
     "array-bracket-spacing": ["error", "never"],
-    "array-bracket-newline": ["error", { "multiline": true, "minItems": 2 }],
+    "array-bracket-newline": ["error"],
     "space-in-parens": ["error", "never"],
     "no-extra-parens": [
       "error",
